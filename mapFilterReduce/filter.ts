@@ -1,4 +1,4 @@
-const filter = (f, iter) => {
+const filter = (f: Function, iter: number[]) => {
   let res = [];
   for (const item of iter) {
     if (f(item)) res.push(item);
@@ -7,4 +7,4 @@ const filter = (f, iter) => {
 }
 
 
-module.exports = filter;
+export default filter;
